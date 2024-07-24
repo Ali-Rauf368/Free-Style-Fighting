@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Free Style  Fighting Game</h1>
+        </header>
+        <main>
+            <div id="game-info">
+                <div id="fighter1-info">
+                    <div class="avatar" id="fighter1-avatar"><i class="fa-solid fa-user-ninja"></i></div>
+                    <h2 id="fighter1-name">Fighter 1 (You)</h2>
+                    <div class="power-bar" id="fighter1-power-bar"></div>
+                </div>
+                <div id="fighter2-info">
+                    <div class="avatar" id="fighter2-avatar"><i class="fas fa-robot"></i></div>
+                    <h2 id="fighter2-name">Fighter 2 (Computer)</h2>
+                    <div class="power-bar" id="fighter2-power-bar"></div>
+                </div>
+            </div>
+            <section id="instructions">
+                <h2>Instructions</h2>
+                <p>Welcome to the Turn-Based Fighting Game! Each player takes turns selecting a move to attack the opponent. The available moves are:</p>
+                <ul>
+                    <li><strong>Jab 💥:</strong> Deals 5 damage</li>
+                    <li><strong>Hammerfist 👊:</strong> Deals 10 damage</li>
+                    <li><strong>Kick 🦵:</strong> Deals 15 damage</li>
+                    <li><strong>Choke 🪤:</strong> Deals 20 damage</li>
+                </ul>
+                <p>The first fighter to reduce their opponent's power to zero wins!</p>
+            </section>
+            <section id="actions">
+                <button onclick="startGame()">Start Game</button>
+                <div id="move-selection" style="display:none;">
+                    <select id="move-selector">
+                        <option value="jab">Jab 💥</option>
+                        <option value="hammerfist">Hammerfist 👊</option>
+                        <option value="kick">Kick 🦵</option>
+                        <option value="choke">Choke 🪤</option>
+                    </select>
+                    <button onclick="makeMove()">Submit Move</button>
+                </div>
+            </section>
+            <div id="log"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Fighting Game Inc. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>Follow us on <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>, and <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

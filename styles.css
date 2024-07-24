@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    flex: 1;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#fighter1-info, #fighter2-info {
+    flex: 1;
+}
+
+.avatar {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#fighter1-name, #fighter2-name {
+    font-size: 18px;
+    margin: 0;
+}
+
+.power-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.power-bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#instructions, #actions {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#move-selection {
+    margin-top: 20px;
+}
+
+#log {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
